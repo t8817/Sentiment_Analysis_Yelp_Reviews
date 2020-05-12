@@ -1,0 +1,8 @@
+db.createCollection('bl72973_yelp');
+show collections
+db.bl72973_yelp.find({stars:0}).count();
+db.bl72973_yelp.find({stars:1}).count();
+db.bl72973_yelp.find({stars:2}).count();
+db.bl72973_yelp.find({stars:3}).count();
+db.bl72973_yelp.find({stars:4}).count();
+db.bl72973_yelp.find({stars:5}).count();
