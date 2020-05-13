@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # _*_coding:utf-8 _*_
 #@Time    :2020/4/23 23:46
-#@Author  :Millie Zeng, Tanvi
+#@Author  :Millie Zeng
 #@FileName: Classier_Treee.py
 #@Software: VScode
 
