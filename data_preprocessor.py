@@ -27,23 +27,23 @@ with open('business.json', 'w') as business:
 # df = pd.DataFrame(business_data, columns=['business_id', 'name', 'stars', 'is_open'])
 businessFile.close()
 
-# reviewFile = open('yelp_review.json', encoding="utf8")
-#
-# review_data = list()
-# for i, line in enumerate(reviewFile):
-#     # convert the json on this line to a dict
-#     data = json.loads(line)
-#     # extract what we want
-#     business_id = data["business_id"]
-#     review_id = data["review_id"]
-#     user_id = data["user_id"]
-#     stars = data["stars"]
-#     text = data["text"]
-#     print(text)
-#     # add to the data collected so far
-#     review_data.append({'business_id':business_id, 'review_id':review_id, 'user_id':user_id, 'stars':stars, 'text':text})
-#
-# with open('review.json', 'w') as review:
-#     json.dump(review_data, review)
-#
-# reviewFile.close()
+reviewFile = open('yelp_review.json', encoding="utf8")
+
+review_data = list()
+for i, line in enumerate(reviewFile):
+     # convert the json on this line to a dict
+     data = json.loads(line)
+     # extract what we want
+     business_id = data["business_id"]
+     review_id = data["review_id"]
+     user_id = data["user_id"]
+     stars = data["stars"]
+     text = data["text"]
+     print(text)
+     # add to the data collected so far
+     review_data.append({'business_id':business_id, 'review_id':review_id, 'user_id':user_id, 'stars':stars, 'text':text})
+
+ with open('review.json', 'w') as review:
+     json.dump(review_data, review)
+
+reviewFile.close()
